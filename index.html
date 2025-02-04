@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio - BBA Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            background-color: #fff;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        /* Education Section */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .education-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-item {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">Manisha Shukla</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Manisha Shukla</h1>
+                <p>BBA Student | Business Analytics Enthusiast</p>
+                <p>Passionate about leveraging data-driven insights to solve business challenges and create value for organizations.</p>
+            </div>
+            <img src="Manisha.jpg" alt="Professional headshot" class="hero-image">
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Bachelor of Business Administration</h3>
+                    <p>School of Management Sciences</p>
+                    <p>2020 - 2023</p>
+                    <p>Major: Business Analytics</p>
+                    <p>GPA: 8.5/10</p>
+                </div>
+                <div class="education-card">
+                    <h3>Business Analytics Certification</h3>
+                    <p>Google Analytics Academy</p>
+                    <p>2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Data Analysis</div>
+                <div class="skill-item">Market Research</div>
+                <div class="skill-item">Financial Modeling</div>
+                <div class="skill-item">Project Management</div>
+                <div class="skill-item">Strategic Planning</div>
+                <div class="skill-item">Business Intelligence</div>
+                <div class="skill-item">MS Excel</div>
+                <div class="skill-item">Tableau</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <h2 class="section-title">Projects & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Market Analysis Project</h3>
+                    <p>Led a team of 4 students in analyzing market trends for a local business, resulting in 25% increase in customer engagement.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Financial Optimization Study</h3>
+                    <p>Developed a comprehensive financial model that identified potential cost savings of $50,000 annually.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Business Case Competition</h3>
+                    <p>First place winner in the University Business Case Competition 2022, presenting innovative solutions for sustainable business practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); padding: 3rem 0;">
+        <div class="section-container" style="max-width: 600px;">
+            <h2 class="section-title" style="color: #fff; margin-bottom: 2rem; font-size: 2rem;">Let's Connect</h2>
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.2); display: flex; flex-direction: column; gap: 1.5rem;">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-envelope" style="font-size: 1.5rem; color: #3498db;"></i>
+                    <a href="mailto:shuklamanisha1909@gmail.com" style="color: #fff; text-decoration: none; font-size: 1rem; transition: all 0.3s ease;">
+                        shuklamanisha1909@gmail.com
+                    </a>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="fab fa-linkedin" style="font-size: 1.5rem; color: #3498db;"></i>
+                    <a href="#" target="_blank" style="color: #fff; text-decoration: none; font-size: 1rem; transition: all 0.3s ease;">
+                        Manisha Shukla
+                    </a>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: #3498db;"></i>
+                    <span style="color: #fff; font-size: 1rem;">Varanasi, India</span>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem;">
+                    <a href="#" class="social-icon" style="color: #fff; font-size: 1.5rem; transition: all 0.3s ease;">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" style="color: #fff; font-size: 1.5rem; transition: all 0.3s ease;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_manishu1909/" class="social-icon" style="color: #fff; font-size: 1.5rem; transition: all 0.3s ease;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .social-icon:hover {
+                color: #3498db !important;
+                transform: translateY(-3px);
+            }
+
+            #contact a:hover {
+                color: #3498db !important;
+                transform: translateX(5px);
+            }
+        </style>
+
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </section>
+
+</body>
+</html>
